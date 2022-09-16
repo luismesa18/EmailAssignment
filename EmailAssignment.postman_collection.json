@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "848bb027-3d75-4239-87d3-33e5ebd0e50d",
+		"name": "EmailAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5253722"
+	},
+	"item": [
+		{
+			"name": "SendEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"To\": \"lmesa18@gmail.com\",\r\n    \"Subject\" : \"Postman Test\",\r\n    \"Body\" : \"This is an email test launched from Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/api/emailsender/sendemail",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"api",
+						"emailsender",
+						"sendemail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

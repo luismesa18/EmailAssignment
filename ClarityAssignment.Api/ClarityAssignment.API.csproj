@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClarityAssignmen.Domain\ClarityAssignment.Domain.csproj" />
+    <ProjectReference Include="..\ClarityAssignment.Application\ClarityAssignment.Application.csproj" />
+    <ProjectReference Include="..\ClarityAssignment.Infrastructure\ClarityAssignment.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

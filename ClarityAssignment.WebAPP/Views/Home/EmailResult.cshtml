@@ -1,0 +1,33 @@
+﻿@model EmailViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+@if(Model is not null)
+{
+    <h5 class="display-4">Email sent successfully</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>To</th>
+                <th>Subject</th>
+                <th>Body</th>
+            </tr>
+                    
+        </thead>
+        <tbody>   
+            <tr>
+                <td>
+                    @Model.To
+                </td>
+                <td>
+                    @Model.Subject
+                </td>
+                <td>
+                    @Model.Body
+                </td>
+            </tr>
+                    
+        </tbody>
+    </table>
+    <a asp-action="CreateEmail" class="btn btn-primary mb-3">Send Email</a> 
+}
