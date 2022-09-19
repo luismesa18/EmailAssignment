@@ -29,8 +29,8 @@ namespace ClarityAssignment
             services.AddControllers();
             services.AddDbContext<EmailDBContext>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("EmailDB")));
-            services.AddTransient<IEmailSender, EmailSender>();
-            services.AddTransient<IEmailLogRepository, EmailLogRepository>();
+            services.AddScoped<IEmailSender, EmailSender>();
+            services.AddScoped<IEmailLogRepository, EmailLogRepository>();
             services.AddMediatR(typeof(SendEmailCommand).Assembly);
         }
 
